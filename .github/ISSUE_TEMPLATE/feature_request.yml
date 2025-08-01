@@ -1,0 +1,32 @@
+name: 🌟 Feature Request
+description: Suggest a new tutorial, workshop topic, or improvement
+title: "[Feature]: "
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: "Help us improve this project by suggesting a new feature."
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feature Summary
+      placeholder: e.g. Add a tutorial for Adobe Firefly animation
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Description
+      description: Please provide more details on the feature idea
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Area of Impact
+      options:
+        - label: Tutorial content
+        - label: Workshop material
+        - label: GitHub Pages site
+        - label: Other
