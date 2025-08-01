@@ -1,0 +1,43 @@
+name: 🐛 Bug Report
+description: Report a problem or unexpected behavior
+title: "[Bug]: "
+labels: [bug]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting a bug! Please complete the form below."
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: What platform or tool does this relate to?
+      placeholder: e.g. Qwiklabs, Firefly, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the issue.
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (if applicable)
